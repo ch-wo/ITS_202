@@ -18,10 +18,10 @@ public class BubbleSort{
 		int[] array = {3,6,2,8,1,4};
 		int l = array.length;
 
-		System.out.print("Array before sorting: ");
-		for (int i = 0; i < l; i++ ) {
-			System.out.print(array[i]);
-		}	
+		// System.out.print("Array before sorting: ");
+		// for (int i = 0; i < l; i++ ) {
+		// 	System.out.print(array[i]);
+		//}	
 		BubbleS(array);	
 		System.out.println("");
 
