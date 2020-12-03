@@ -226,28 +226,28 @@ public class Solution<Key extends Comparable<Key>, Value> {
      * @throws IllegalArgumentException if either {@code lo} or {@code hi}
      *         is {@code null}
      */
-    public Iterable<Key> keys(Key lo, Key hi) {
-        ArrayList<Key> array = new ArrayList<Key>();
-        keys(root, array, lo, hi);
-        return array;
-    } 
+    // public Iterable<Key> keys(Key lo, Key hi) {
+    //     ArrayList<Key> array = new ArrayList<Key>();
+    //     keys(root, array, lo, hi);
+    //     return array;
+    // } 
 
-    private void keys(Node x,ArrayList<Key> array, Key lo, Key hi) { 
-        if(x == null){
-            return;
-        }
-        int cmplo = lo.compareTo(x.key);
-        int cmphi = hi.compareTo(x.key);
-        if(cmplo < 0){
-            keys(x.left, array, lo, hi);
-        }
-        if(cmplo <= 0 && cmphi >= 0){
-            array.add(x.key);
-        }
-        if(cmphi > 0){
-            keys(x.right, array, lo, hi);
-        }
-    } 
+    // private void keys(Node x,ArrayList<Key> array, Key lo, Key hi) { 
+    //     if(x == null){
+    //         return;
+    //     }
+    //     int cmplo = lo.compareTo(x.key);
+    //     int cmphi = hi.compareTo(x.key);
+    //     if(cmplo < 0){
+    //         keys(x.left, array, lo, hi);
+    //     }
+    //     if(cmplo <= 0 && cmphi >= 0){
+    //         array.add(x.key);
+    //     }
+    //     if(cmphi > 0){
+    //         keys(x.right, array, lo, hi);
+    //     }
+    // } 
     /* Run the program by giving the approriate command obtained from
     input files through input.txt files. The output should be displayed
     exactly like the file output.txt shows it to be.*/

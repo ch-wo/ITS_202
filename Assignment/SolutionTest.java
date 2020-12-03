@@ -21,6 +21,6 @@ public class SolutionTest{
 		System.out.println(obj.get("CHIMI"));
 		System.out.println(obj.floor("CHIMA"));
 		obj.put("SONAM",8);
-		System.out.println(obj.keys("ABDUL","TASHI"));
+		//System.out.println(obj.keys("ABDUL","TASHI"));
 	}
 }
